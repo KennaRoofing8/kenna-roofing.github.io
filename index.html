@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenna Roofing</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/KennaRoofingLogo.png" alt="Kenna Roofing Logo">
+            </a>
+          </div>
+      
+          <!-- Hamburger Icon -->
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+      
+          <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="#">Services ▾</a>
+                <ul class="dropdown-menu">
+                  <li><a href="roofs.html">Roofs</a></li>
+                  <li><a href="gutters.html">Gutters</a></li>
+                  <li><a href="siding.html">Siding</a></li>
+                  <li><a href="storm-repair.html">Storm Repair</a></li>
+                  <li><a href="painting.html">Painting</a></li>
+                  <li><a href="other-improvements.html">Other Improvements</a></li>
+                </ul>
+              </li>
+            <li><a href="our-work.html">Our Work</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="quote.html" class="quote-btn">Free Quote</a></li>
+          </ul>
+        </div>
+      </header>
+
+  <!-- Hero Section -->
+
+<!-- Left side box -->
+  <section class="hero hero-left-overlay">
+    <div class="hero-box">
+      <h1>Proudly Serving Connecticut Homeowners For Over 29 Years</h1>
+      <a href="quote.html" class="hero-btn">Get a Free Quote</a>
+    </div>
+  </section>
+
+  <section class="intro">
+    <div class="intro-container">
+      <h2>Licensed Family-Owned Specialists in Home Improvement</h2>
+      <p>
+        With hundreds of years of combined experience, Kenna Roofing has proudly served homeowners across Connecticut with trusted, high-quality roofing solutions. Our dedication to craftsmanship and care has made us a staple in local home improvement for generations. Our wide varity of roofing services guarantees that Kenna Roofing can meet any of your home improvement needs. Our commitment to excellence and long-term reliability means we will go above and beyond to provide the best service — because your satisfaction is the measure of our success.
+      </p>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+  
+      <div class="service-item" style="background-image: url('images/roofs.jpg');">
+        <div class="overlay">
+          <div class="service-text">
+            <h3>Roofs</h3>
+            <a href="roofs.html" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="service-item" style="background-image: url('images/gutters.jpg');">
+        <div class="overlay">
+          <div class="service-text">
+            <h3>Gutters</h3>
+            <a href="gutters.html" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="service-item" style="background-image: url('images/siding.jpg');">
+        <div class="overlay">
+          <div class="service-text">
+            <h3>Siding</h3>
+            <a href="siding.html" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="service-item" style="background-image: url('images/storm-repair.jpg');">
+        <div class="overlay">
+          <div class="service-text">
+            <h3>Storm Repair</h3>
+            <a href="storm-repair.html" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="service-item" style="background-image: url('images/painting.jpg');">
+        <div class="overlay">
+          <div class="service-text">
+            <h3>Painting</h3>
+            <a href="painting.html" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="service-item" style="background-image: url('images/other-improvements.jpg');">
+        <div class="overlay">
+          <div class="service-text">
+            <h3>Other Improvements</h3>
+            <a href="other-improvements.html" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+  <section class="before-after">
+    <h2>See the Kenna Difference</h2>
+    <div class="ba-container">
+      <div class="ba-image-wrapper">
+        <img src="ChrisPhotos/ShedBefore2.jpeg" alt="Roof Before" class="ba-before">
+        <div class="ba-after-wrapper">
+          <img src="ChrisPhotos/ShedBefore.JPG" alt="Roof After" class="ba-after">
+        </div>
+        <span class="ba-label ba-label-before">Before</span>
+        <span class="ba-label ba-label-after">After</span>
+        <input type="range" min="0" max="100" value="50" class="ba-slider">
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="contact-container">
+      <h2>Send Us A Message</h2>
+      <p>Contact us if you have any questions or if you're ready for a quote. Kenna Roofing is ready to help you today!</p>
+      
+      <form class="contact-form" action="#" method="post">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+  
+        <div class="form-group">
+          <input type="tel" name="phone" placeholder="Your Phone" required>
+        </div>
+  
+        <div class="form-group">
+          <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+        </div>
+  
+        <button type="submit" class="contact-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo -->
+      <div class="footer-left">
+        <img src="images/KennaRoofingLogo.png" alt="Kenna Roofing Logo" class="footer-logo">
+      </div>
+
+      <!-- Information -->
+      <div class="footer-column">
+        <h3>Information</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="our-work.html">Our Work</a></li>
+          <li><a href="photo-gallery.html">Photo Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-column">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="roofs.html">Roofs</a></li>
+          <li><a href="gutters.html">Gutters</a></li>
+          <li><a href="siding.html">Siding</a></li>
+          <li><a href="storm-repair.html">Storm Repair</a></li>
+          <li><a href="painting.html">Painting</a></li>
+          <li><a href="other-improvements.html">Other Improvements</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <ul class="contact-list">
+          <li><i data-lucide="phone"></i> (203) 824-3843</li>
+          <li><i data-lucide="mail"></i> KennaRoofingLLC@yahoo.com</li>
+          <li>Fully Insured Lic.# 0629999</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © 2025 Kenna Roofing. All rights reserved. 
+        <span class="made-by">
+          <a href="https://www.qualnexsolutions.com" target="_blank">Website design by Qualnex Solutions</a>.
+        </span>
+      </p>
+    </div>
+  </footer>
+    
+    <!-- Initialize Lucide icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+
+  <script>
+    const slider = document.querySelector('.ba-slider');
+    const afterWrapper = document.querySelector('.ba-after-wrapper');
+    const beforeLabel = document.querySelector('.ba-label-before');
+    const afterLabel = document.querySelector('.ba-label-after');
+
+    slider.addEventListener('input', (e) => {
+    const value = e.target.value;
+    afterWrapper.style.width = `${value}%`;
+
+    // Adjust label visibility based on slider position
+    beforeLabel.style.opacity = value < 15 ? '0' : '1';
+    afterLabel.style.opacity = value > 85 ? '0' : '1';
+    });
+  </script>
+
+  <script src="menu.js"></script>
+    
+</body>
+</html>
