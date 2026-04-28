@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenna Roofing | About Us</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Learn about Kenna Roofing — a licensed, family-owned roofing company proudly serving Connecticut homeowners for generations.">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body data-page="about">
+
+  <!-- Navbar, Modal & Footer injected by components.js -->
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="header-overlay">
+      <h1>About Us</h1>
+    </div>
+  </header>
+
+  <!-- ===== MEET THE OWNER ===== -->
+  <section class="owner-section">
+    <div class="owner-content">
+      <h2>Meet the Owner</h2>
+      <p>
+        With over 29 years of being in business, owner Chris Leigh brings decades of experience in construction and home improvement to every project. His deep understanding of the trade, paired with a hands-on leadership style, ensures that every roof, repair, and renovation reflects the highest standards of quality. Chris believes that great work starts with great communication — taking the time to understand each customer's needs and delivering solutions built to last.
+      </p>
+      <p>
+        Known for his positive attitude and unwavering dedication, Chris has built Kenna Roofing on a foundation of trust, integrity, and exceptional service. He takes pride in going above and beyond for his customers, treating every home as if it were his own. Under his leadership, Kenna Roofing continues to grow through honesty, craftsmanship, and a promise to deliver only the best.
+      </p>
+    </div>
+    <div class="owner-image">
+      <img src="ChrisPhotos2/Owner.jpeg" alt="Chris Leigh — Owner of Kenna Roofing">
+    </div>
+  </section>
+
+  <!-- ===== VALUES ===== -->
+  <section class="values-section">
+    <div class="section-label">
+      <h2>Kenna Values</h2>
+      <p>The principles that guide every project we take on.</p>
+    </div>
+
+    <div class="values-grid">
+      <div class="value-item">
+        <i data-lucide="shield-check"></i>
+        <h3>Integrity</h3>
+        <p>We are honest, transparent, and fair in every project we take on.</p>
+      </div>
+      <div class="value-item">
+        <i data-lucide="clock"></i>
+        <h3>Reliability</h3>
+        <p>You can count on us to deliver quality work, on time, every time.</p>
+      </div>
+      <div class="value-item">
+        <i data-lucide="hammer"></i>
+        <h3>Craftsmanship</h3>
+        <p>We take pride in doing things right, with attention to every detail.</p>
+      </div>
+    </div>
+
+    <div class="values-row-centered">
+      <div class="value-item">
+        <i data-lucide="hard-hat"></i>
+        <h3>Safety</h3>
+        <p>We follow the highest safety standards to protect your home and our team.</p>
+      </div>
+      <div class="value-item">
+        <i data-lucide="users"></i>
+        <h3>Community</h3>
+        <p>We're proud to serve and give back to the Connecticut communities that trust us.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BANNER ===== -->
+  <div class="service-banner">
+    <img src="images/testimonial-house.jpg" alt="Family-Owned and Operated Banner">
+    <div class="service-banner-overlay"></div>
+    <div class="service-banner-text">
+      <h1>Family-Owned and Operated</h1>
+      <p>Ready to Serve You Today</p>
+      <button class="service-banner-btn open-quote-modal">Get a Free Quote</button>
+    </div>
+  </div>
+
+  <!-- ===== SERVICE AREA ===== -->
+  <section class="service-area">
+    <div class="section-label">
+      <h2>Area of Service</h2>
+      <p>We proudly serve all eight Connecticut counties.</p>
+    </div>
+    <div class="service-area-content">
+      <div class="service-area-text">
+        <p>We proudly serve the following Connecticut counties:</p>
+        <ul>
+          <li><i data-lucide="map-pin"></i> Fairfield County</li>
+          <li><i data-lucide="map-pin"></i> Hartford County</li>
+          <li><i data-lucide="map-pin"></i> Litchfield County</li>
+          <li><i data-lucide="map-pin"></i> Middlesex County</li>
+          <li><i data-lucide="map-pin"></i> New Haven County</li>
+          <li><i data-lucide="map-pin"></i> New London County</li>
+          <li><i data-lucide="map-pin"></i> Tolland County</li>
+          <li><i data-lucide="map-pin"></i> Windham County</li>
+        </ul>
+      </div>
+      <div class="service-area-image">
+        <img src="images/connecticut-map.png" alt="Connecticut Service Area Map">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact">
+    <div class="contact-container">
+      <div class="contact-header-strip">
+        <h2>Send Us A Message</h2>
+        <p>Contact us if you have any questions or if you're ready for a quote.</p>
+      </div>
+      <div class="contact-form-body">
+        <form class="contact-form" action="#" method="post">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required>
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="(203) 555-0100" required>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..."></textarea>
+          </div>
+          <button type="submit" class="contact-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script>lucide.createIcons();</script>
+  <script src="components.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenna Roofing | Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body data-page="contact">
+  <header class="page-header"><div class="header-overlay"><h1>Contact Us</h1></div></header>
+
+  <section class="contact-header">
+    <h2>Call, Email, or Fill Out Our Form Today!</h2>
+    <div class="contact-info">
+      <div class="contact-item">
+        <i data-lucide="phone"></i>
+        <span>(203) 824-3843</span>
+      </div>
+      <div class="contact-item">
+        <i data-lucide="mail"></i>
+        <span>KennaRoofingLLC@yahoo.com</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="contact-container">
+      <div class="contact-header-strip">
+        <h2>Send Us A Message</h2>
+        <p>Contact us if you have any questions or if you're ready for a quote. Kenna Roofing is ready to help you today!</p>
+      </div>
+      <div class="contact-form-body">
+        <form class="contact-form" action="#" method="post">
+          <div class="form-row">
+            <div class="form-field">
+              <label>Name</label>
+              <input type="text" name="name" placeholder="Your full name" required>
+            </div>
+            <div class="form-field">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="your@email.com" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label>Phone</label>
+            <input type="tel" name="phone" placeholder="(203) 555-0100" required>
+          </div>
+          <div class="form-field">
+            <label>Message</label>
+            <textarea name="message" rows="5" placeholder="Tell us about your project..."></textarea>
+          </div>
+          <button type="submit" class="contact-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script>lucide.createIcons();</script>
+  <script src="components.js"></script>
+</body>
+</html>

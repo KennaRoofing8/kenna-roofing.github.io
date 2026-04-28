@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenna Roofing | Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body data-page="our-work">
+  <header class="page-header"><div class="header-overlay"><h1>Photo Gallery</h1></div></header>
+
+  <div class="gallery-intro">
+    <p>Take a look at some of our recent projects!</p>
+  </div>
+
+  <section class="photo-gallery">
+    <div class="gallery-container">
+      <img src="ChrisPhotos/1863913013476755295.JPG" alt="Roof project">
+      <img src="ChrisPhotos/IMG_0202.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_0275.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_0360.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_0404.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_0408.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_0410.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_0413.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_2730.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_3441.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_3442.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_3462.png" alt="Roof project">
+      <img src="ChrisPhotos/IMG_3465.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_3477.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_3480.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_3503.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_4120.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_4699.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_4768.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_4826.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_5075.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_5190.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_5931.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_5985.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/MetalAfter.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/MetalBefore.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/Resized_20220328_155344.JPG" alt="Roof project">
+      <img src="ChrisPhotos/IMG_5993.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_6159.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_7384.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/RoofBefore.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/RoofAfter.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_7423.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_7508.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_7714.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_7795.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_7822.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_7823.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/IMG_8595.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/ShedAfter.JPG" alt="Roof project">
+      <img src="ChrisPhotos/ShedBefore2.jpeg" alt="Roof project">
+      <img src="ChrisPhotos/ShedBefore.JPG" alt="Roof project">
+      <img src="ChrisPhotos2/IMG_1518.JPG" alt="Roof project">
+      <img src="ChrisPhotos2/IMG_1520.JPG" alt="Roof project">
+      <img src="ChrisPhotos2/IMG_1832.JPG" alt="Roof project">
+      <img src="ChrisPhotos2/CommercialAfter.jpeg" alt="Roof project">
+      <img src="ChrisPhotos2/CommercialBefore.jpeg" alt="Roof project">
+      <img src="ChrisPhotos2/HouseAfter.jpeg" alt="Roof project">
+      <img src="ChrisPhotos2/IMG_3772.JPG" alt="Roof project">
+      <img src="ChrisPhotos2/HouseBefore.jpeg" alt="Roof project">
+      <img src="ChrisPhotos2/IMG_4031.jpeg" alt="Roof project">
+      <img src="ChrisPhotos2/IMG_4042.jpeg" alt="Roof project">
+      <img src="ChrisPhotos2/IMG_4547.JPG" alt="Roof project">
+      <img src="ChrisPhotos2/Owner.jpeg" alt="Owner">
+    </div>
+  </section>
+
+  <!-- Image Popup Modal -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg" alt="Gallery image enlarged">
+  </div>
+
+  <script>lucide.createIcons();</script>
+  <script src="components.js"></script>
+  <script>
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+    const images = document.querySelectorAll(".gallery-container img");
+    const closeBtn = document.querySelector(".close");
+    images.forEach(img => {
+      img.addEventListener("click", () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+    });
+    closeBtn.addEventListener("click", () => { modal.style.display = "none"; });
+    modal.addEventListener("click", (e) => { if (e.target === modal) modal.style.display = "none"; });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") modal.style.display = "none"; });
+  </script>
+</body>
+</html>
